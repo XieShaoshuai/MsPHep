@@ -1,0 +1,14 @@
+name: HS_MSMS
+title: HS_MSMS
+username:
+account: glycodb
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6377811
+bundleId: 6151356
+url: https://glycodb.shinyapps.io/HS_MSMS/
+when: 1659307541.98866
+lastSyncTime: 1659307541.98866
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData

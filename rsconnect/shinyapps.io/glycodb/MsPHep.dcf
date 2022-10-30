@@ -1,0 +1,14 @@
+name: MsPHep
+title: MsPHep
+username:
+account: glycodb
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7115306
+bundleId: 6448887
+url: https://ngrc-glycan.shinyapps.io/MsPHep/
+when: 1666912202.65445
+lastSyncTime: 1666912202.65445
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|backup 0730/app0730.R|example/HeparinParameterFile.xml
