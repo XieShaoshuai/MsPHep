@@ -1,5 +1,4 @@
 # MsPHep
-# Welcome to MsPHep &nbsp;
 
 <b><span style="color:#F17F42">MsPHep</span></b> is Low Molecular weight heparin (LMWH) analysis tool which is user-friendly and efficiently to evalute LC-MS top-down datasets.
 
