@@ -17,9 +17,9 @@ In particluar, <b><span style="color:#F17F42">MsPHep</span></b>  include functio
 
 # About MsPHep
 
-About MsPHep is publicly available on [GitHub](xxxxx) under a GPL-3 license. 
+About MsPHep is publicly available on [GitHub](https://github.com/XieShaoshuai/MsPHep) under a GPL-3 license. 
 
-The web application can be freely accessed for direct online use at [xxxxx](http://glycoeng.sdu.edu.cn/english). 
+The web application can be freely accessed for direct online. 
 
 ---
 <a href= 'http://glycoeng.sdu.edu.cn/english/'><img src='pix/sdulogo.png' align="left" title='Shandong University' width='300'/></a>

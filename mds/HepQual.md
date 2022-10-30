@@ -1,0 +1,11 @@
+**MS find** section provieds a friendly way to interactively search the corresponding structure of  low-molecular-weight heparin (LMWH) or heparin/heparan sulfate oligosaccharides by  provided of LC-MS m/z and charge.
+
+
+**Step1**: Select the corresponding LMWH or heparin database. Different types of LMWHs share the same building blocks while the end structures (reducing end and nonreducing end) and degree of polymerization are variable due to different preparation methods. Thus, database selection is crucial for obtaining accurate output.
+
+**Step2**: Selective adducted form.
+
+**Step3**: Input m/z and charge. Input the m/z and charge of the monoisotopic peak that you want to search against. An m/z rounded to at least two decimal places is suggested to reduce redundant false outputs.
+
+**Step4**: Set the ppm and monoisotopic peak.We suggest a ppm range from 10 to 25 for efficiency balance. Sometimes, the monoisotopic peak for >dp20 oligosaccharides cannot be distinguished from the spectra. You can set the option “Is input m/z monoisotopic peak” as NO. The HepQual will consider all the possibilities where input m/z is the 2nd to 5th isotopic peak. Then, the corresponding monomolecular weight is calculated and compared to the database.
+

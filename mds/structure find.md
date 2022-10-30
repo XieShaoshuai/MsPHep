@@ -1,12 +1,11 @@
 **MS find** section provieds a friendly way to interactively search the corresponding structure of  low-molecular-weight heparin (LMWH) or heparin/heparan sulfate oligosaccharides by  provided of LC-MS m/z and charge.
 
 
- 1. Various types of LMWHs can be searched including Enoxaparin, Dalteparin and Nadroparin.  Heparan/HS with  degree of polymerisation <30 is also supported.
- 
- 3. MS find can be applied to 2 mosly used LMWH intact chain analysis methods HILIC and SEC.
-	 - Method 1 HILIC: Li, Lingyun, et al. "Top-down approach for the direct characterization of low molecular weight heparins using LC-FT-MS." _Analytical chemistry_ 84.20 (2012): 8822-8829.
-	 - Mehod 2 SEC-ion suppressor: Zaia, Joseph, et al. "Complete molecular weight profiling of low-molecular weight heparins using size exclusion chromatography-ion suppressor-high-resolution mass spectrometry." _Analytical chemistry_ 88.21 (2016): 10654-10660.
+**Step1**: Select the corresponding LMWH or heparin database. Different types of LMWHs share the same building blocks while the end structures (reducing end and nonreducing end) and degree of polymerization are variable due to different preparation methods. Thus, database selection is crucial for obtaining accurate output.
 
- 3. We suggest to set ppm as 10 or less if LMWH is analyised by high resolution mass specmeter (such as Thermo Orbitrap XL, Thermo QE)
+**Step2**: Selective adducted form. Two types of adducted forms are supported: NH4+ and H+. MS-friendly volatile salts are usually used in the diluent and mobile phases to obtain good separation and ionic strength. The traditional LMWH top-down analysis method, HILIC-LC-MS, requires ammonium acetate in the mobile phase to get separate sharp peaks. Thus, the negative-charged LMWHs will possess added NH4+ (1). Recently, Zaia et al. developed a new LMWH analysis strategy, size e.xclusion chromatography-ion suppressor-MS, which can achieve buffer exchange from NH4+ to H+ (2).
 
- 4. For Enoxaparin, output are given as [ΔHexA, HexA, GlcN, Ac, SO3, 1,6-anhydro]-[Adductive], For Heparin/HS, output are given as [ΔHexA, HexA, GlcN, Ac, SO3]-[Adductive];for Method 1, the adductive is NH3, for Method 2, there is no adductive
+**Step3**: Input m/z and charge. Input the m/z and charge of the monoisotopic peak that you want to search against. An m/z rounded to at least two decimal places is suggested to reduce redundant false outputs.
+
+**Step4**: Set the ppm and monoisotopic peak. Once m/z and charge are inputted in Step3, the corresponding molecular weight will be calculated and searched against the database structures where only abs(MWexperimental − MWtheoretical) / MWtheoretical ×1,000,000 < ppm is outputted. The default ppm is set to 15 for the Thermo Orbitrap XL mass spectrometer. You can adjust the ppm value based on the MS resolution. We suggest a ppm range from 10 to 25 for efficiency balance. A smaller ppm will deplete the positive results while a larger ppm will introduce noisy output. Sometimes, the monoisotopic peak for >dp20 oligosaccharides cannot be distinguished from the spectra. You can set the option “Is input m/z monoisotopic peak” as NO. The HepQual will consider all the possibilities where input m/z is the 2nd to 5th isotopic peak. Then, the corresponding monomolecular weight is calculated and compared to the database.
+
