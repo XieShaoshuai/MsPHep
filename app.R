@@ -36,12 +36,12 @@ sidebar <- dashboardSidebar(
     
     menuItem("HepQual",tabName='MS',icon=icon("search")),
     
-    menuItem("HepQuan",tabName='HepQuan',icon=icon("search")),
+    menuItem("HepQuant",tabName='HepQuan',icon=icon("search")),
     
     #menuItem("MSMS",tabName='MSMS',icon=icon("cut")),
-    tags$hr(style="border-color: grey;"),
+    tags$hr(style="border-color: grey;")
     
-    menuItem('Contact',tabName='help')
+    #menuItem('Contact',tabName='help')
   )
   
 )
@@ -65,7 +65,7 @@ body <-  dashboardBody(
                   collapsible = TRUE,
                   collapsed = FALSE,
                   closable = FALSE,
-                  includeMarkdown("mds/structure find.md")
+                  includeMarkdown("mds/HepQual.md")
                  ),
             ),
             fluidRow(
@@ -147,7 +147,13 @@ body <-  dashboardBody(
     
     
     #????????????-----
-    tabItem(tabName = "MSMS",h2("Widgets tab content"),)
+    
+    tabItem(tabName = "Contact",
+            fluidRow(
+              column(width = 10,
+                     includeMarkdown("mds/contact.md"))
+            )
+    )
     )
 )
 

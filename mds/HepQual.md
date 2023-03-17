@@ -1,4 +1,4 @@
-**MS find** section provieds a friendly way to interactively search the corresponding structure of  low-molecular-weight heparin (LMWH) or heparin/heparan sulfate oligosaccharides by  provided of LC-MS m/z and charge.
+**HepQual** section provieds a friendly way to interactively search the corresponding structure of  low-molecular-weight heparin (LMWH) or heparin/heparan sulfate oligosaccharides by  provided of LC-MS m/z and charge.
 
 
 **Step1**: Select the corresponding LMWH or heparin database. Different types of LMWHs share the same building blocks while the end structures (reducing end and nonreducing end) and degree of polymerization are variable due to different preparation methods. Thus, database selection is crucial for obtaining accurate output.

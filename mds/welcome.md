@@ -7,7 +7,7 @@ In particluar, <b><span style="color:#F17F42">MsPHep</span></b>  include functio
 
 (1) <b>HepQual:</b> assign structure and isotopic profile from mass to charge (m/z) and charge
 
-(2) <b>HepQuan:</b> extract LMWHs or heparin compositions and abundances automaticallywithout prior knowledge or any database generation.
+(2) <b>HepQuant:</b> extract LMWHs or heparin compositions and abundances automaticallywithout prior knowledge or any database generation.
 
 ---
 

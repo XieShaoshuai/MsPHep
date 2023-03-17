@@ -1,4 +1,4 @@
-**MS find** section provieds a friendly way to interactively search the corresponding structure of  low-molecular-weight heparin (LMWH) or heparin/heparan sulfate oligosaccharides by  provided of LC-MS m/z and charge.
+**HepQuant** section provieds a friendly way to interactively search the corresponding structure of  low-molecular-weight heparin (LMWH) or heparin/heparan sulfate oligosaccharides by  provided of LC-MS m/z and charge.
 
 
 **Step1**: Deconvolution by DeconTools. The parameter setting XML file can be download at [here](https://raw.githubusercontent.com/XieShaoshuai/MsPHep/main/Example%20data/HeparinParameterFile.xml)
