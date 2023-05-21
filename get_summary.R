@@ -5,7 +5,7 @@ get_summary <- function(data) {
       summarise(
         #dp=dp,
         abundance = round(sum(abundance),0),
-        score = round(sum(score),2)
+        score = round(max(score),2)
       )
   }else{
     data <-data

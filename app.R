@@ -1,3 +1,7 @@
+library(BiocManager)
+#options(repos = BiocManager::repositories())
+
+
 library(shiny)
 library(shinydashboard)
 library(markdown)
@@ -11,6 +15,8 @@ library(dplyr)
 library(ggpmisc)
 library(smoother)
 library(DT)
+library(Biobase)
+library(xcms)
 
 source('structure_searching.R')
 source('iso_prob.R')
@@ -127,6 +133,12 @@ body <-  dashboardBody(
                   #h4("Adductive"),
                   selectInput('add2','Adductive',choice=c('NH3'='_hilic.txt',"No adductive"='_sec.txt')),
                   numericInput("ppm2", "ppm:",min = 0, max = 30, value =15),
+                  h4('Elution time (min)'),
+                  splitLayout(
+                    
+                    numericInput("start", "start",min = 0, max = 1000, value =25),
+                    
+                    numericInput("end", "end",min = 0, max = 1000, value = 50)),
                   splitLayout(
                     textInput("dp_range", "dp range", value = "dp4-dp30"),
                     
@@ -219,7 +231,7 @@ server <- function(input, output,session) {
                      scan <-read.csv(input$scan$datapath,header=TRUE)
                      req(input$iso)
                      iso <- read.csv(input$iso$datapath,header=TRUE)
-                     resx <- hepQuan(scan,iso,input$ppm2,dataset2(),input$minscan)
+                     resx <- hepQuan(scan,iso,input$ppm2,dataset2(),input$minscan,input$start,input$end)
                      return(resx )
                      incProgress(1/15)
                      Sys.sleep(0.25)
